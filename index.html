@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-3 p-0 dashboard">
+          <a href="./index.html" class="dashboard-link d-block">
+            <img
+              src="./images/logo.svg"
+              alt="dashboard logo"
+              class="dashboard-img"
+            />
+          </a>
+          <ul class="dashboard-top-list list-unstyled">
+            <li class="dashboard-top-item">
+              <a href="#" class="dashboard-top-item-link">Overview</a>
+            </li>
+
+            <li class="dashboard-top-item active-link">
+              <a href="#" class="dashboard-top-item-link">Tickets</a>
+            </li>
+
+            <li class="dashboard-top-item">
+              <a href="#" class="dashboard-top-item-link">Ideas</a>
+            </li>
+
+            <li class="dashboard-top-item">
+              <a href="#" class="dashboard-top-item-link">Contacts</a>
+            </li>
+
+            <li class="dashboard-top-item">
+              <a href="#" class="dashboard-top-item-link">Agents</a>
+            </li>
+
+            <li class="dashboard-top-item">
+              <a href="#" class="dashboard-top-item-link">Articles</a>
+            </li>
+          </ul>
+
+          <ul class="dashboard-bottom-list list-unstyled">
+            <li class="dashboard-bottom-item">
+              <a href="#" class="dashboard-bottom-item-link">Settings</a>
+            </li>
+            <li class="dashboard-bottom-item">
+              <a href="#" class="dashboard-bottom-item-link">Subscription</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-9 tickets  px-4">
+          <div class="tickets-header d-flex justify-content-between">
+            <h2 class="tickets-header-title d-block">Tickets</h2>
+            <div class="tickets-info d-flex align-items-center">
+              <div class="tickets-info-search d-flex align-items-center gap-4">
+                <img src="./images/search-icon.svg" alt="" class="tickets-info-search-img">
+                <img src="./images/new-icon.svg" alt="" class="tickets-info-search-img">
+              </div>
+              <img src="./images/vertical-icon.svg" alt="" class="tickets-info-img">
+              <div class="tickets-info-user">
+                <p class="tickets-info-username d-inline-block">Jones Ferdinand</p>
+                <img src="./images/Jones-Ferdinand.png" alt="" class="tickets-info-user-img">
+              </div>
+            </div>
+          </div>
+          <ul class="tickets-list border rounded-3 bg-white list-unstyled">
+            <li class="tickets-item">
+              <div class="tickets-item-top d-flex align-items-center justify-content-between">
+                <h3 class="tickets-item-top-title">All tickets</h3>
+                <div class="tickets-sort-filter-box d-flex">
+                  <p class="tickets-sort-box-text">Sort</p>
+                  <p class="tickets-sort-box-text">Filter</p>
+                </div>
+              </div>
+              <ul class="tickets-item-list list-unstyled d-flex">
+                <li class="tickets-item-item">Ticket details</li>
+                <li class="tickets-item-item">Customer name</li>
+                <li class="tickets-item-item">Date</li>
+                <li class="tickets-item-item">Priority</li>
+              </ul>
+            </li>
+            <li class="tickets-item d-flex align-items-center">
+              <div class="tickets-item-details d-flex align-items-center">
+                <img src="./images/Tom-Cruise.png" alt="Tom Cruise" class="tickets-item-details-img">
+                <div class="tickets-item-details-desc">
+                  <h4 class="tickets-item-details-desc-title">Contact Email not Linked</h4>
+                  <p class="tickets-item-details-desc-text">Updated 1 day ago</p>
+                </div>
+              </div>
+              <div class="tickets-item-customerName">
+                <h4 class="tickets-item-customerName-title">Tom Cruise</h4>
+                <p class="tickets-item-customerName-text">on 24.05.2019</p>
+              </div>
+              <div class="tickets-item-date">
+                <h4 class="tickets-item-date-title">May 26, 2019</h4>
+                <p class="tickets-item-date-text">6:30 PM</p>
+              </div>
+              <div class="tickets-item-priority d-flex align-items-center justify-content-between">
+                <button class="btn btn-priority">High</button>
+                <img src="./images/Vector.svg" alt="Vector icon img" class="tickets-item-priority-img">
+              </div>
+            </li>
+
+            <li class="tickets-item d-flex">
+              <div class="tickets-item-details d-flex align-items-center">
+                <img src="./images/Matt-Damon.png" alt="Matt Damon" class="tickets-item-details-img">
+                <div class="tickets-item-details-desc">
+                  <h4 class="tickets-item-details-desc-title">Adding Images to Featured Posts</h4>
+                  <p class="tickets-item-details-desc-text">Updated 1 day ago</p>
+                </div>
+              </div>
+              <div class="tickets-item-customerName">
+                <h4 class="tickets-item-customerName-title">Matt Damon</h4>
+                <p class="tickets-item-customerName-text">on 24.05.2019</p>
+              </div>
+              <div class="tickets-item-date">
+                <h4 class="tickets-item-date-title">May 26, 2019</h4>
+                <p class="tickets-item-date-text">8:00 AM</p>
+              </div>
+              <div class="tickets-item-priority d-flex align-items-center justify-content-between">
+                <button class="btn btn-priority">Low</button>
+                <img src="./images/Vector.svg" alt="Vector icon img" class="tickets-item-priority-img">
+              </div>
+            </li>
+
+            <li class="tickets-item d-flex">
+              <div class="tickets-item-details d-flex align-items-center">
+                <img src="./images/Robert-Downey.png" alt="Robert Downey" class="tickets-item-details-img">
+                <div class="tickets-item-details-desc">
+                  <h4 class="tickets-item-details-desc-title">When will I be charged this month?</h4>
+                  <p class="tickets-item-details-desc-text">Updated 1 day ago</p>
+                </div>
+              </div>
+              <div class="tickets-item-customerName">
+                <h4 class="tickets-item-customerName-title">Robert Downey</h4>
+                <p class="tickets-item-customerName-text">on 24.05.2019</p>
+              </div>
+              <div class="tickets-item-date">
+                <h4 class="tickets-item-date-title">May 26, 2019</h4>
+                <p class="tickets-item-date-text">7:30 PM</p>
+              </div>
+              <div class="tickets-item-priority d-flex align-items-center justify-content-between">
+                <button class="btn btn-priority">High</button>
+                <img src="./images/Vector.svg" alt="Vector icon img" class="tickets-item-priority-img">
+              </div>
+            </li>
+
+            <li class="tickets-item d-flex">
+              <div class="tickets-item-details d-flex align-items-center">
+                <img src="./images/Christian-Bale.png" alt="Christian Bale" class="tickets-item-details-img">
+                <div class="tickets-item-details-desc">
+                  <h4 class="tickets-item-details-desc-title">Payment not going through</h4>
+                  <p class="tickets-item-details-desc-text">Updated 2 day ago</p>
+                </div>
+              </div>
+              <div class="tickets-item-customerName">
+                <h4 class="tickets-item-customerName-title">Christian Bale</h4>
+                <p class="tickets-item-customerName-text">on 24.05.2019</p>
+              </div>
+              <div class="tickets-item-date">
+                <h4 class="tickets-item-date-title">May 25, 2019</h4>
+                <p class="tickets-item-date-text">5:00 PM</p>
+              </div>
+              <div class="tickets-item-priority d-flex align-items-center justify-content-between">
+                <button class="btn btn-priority">Normal</button>
+                <img src="./images/Vector.svg" alt="Vector icon img" class="tickets-item-priority-img">
+              </div>
+            </li>
+
+
+
+
+            <li class="tickets-item d-flex">
+              <div class="tickets-item-details d-flex align-items-center">
+                <img src="./images/Henry-Cavil.png" alt="Henry Cavil" class="tickets-item-details-img">
+                <div class="tickets-item-details-desc">
+                  <h4 class="tickets-item-details-desc-title">Unable to add replies</h4>
+                  <p class="tickets-item-details-desc-text">Updated 2 day ago</p>
+                </div>
+              </div>
+              <div class="tickets-item-customerName">
+                <h4 class="tickets-item-customerName-title">Henry Cavil</h4>
+                <p class="tickets-item-customerName-text">on 24.05.2019</p>
+              </div>
+              <div class="tickets-item-date">
+                <h4 class="tickets-item-date-title">May 25, 2019</h4>
+                <p class="tickets-item-date-text">4:00 PM</p>
+              </div>
+              <div class="tickets-item-priority d-flex align-items-center justify-content-between">
+                <button class="btn btn-priority">High</button>
+                <img src="./images/Vector.svg" alt="Vector icon img" class="tickets-item-priority-img">
+              </div>
+            </li>
+
+            <li class="tickets-item d-flex">
+              <div class="tickets-item-details d-flex align-items-center">
+                <img src="./images/Chris-Evans.png" alt="Chris Evans" class="tickets-item-details-img">
+                <div class="tickets-item-details-desc">
+                  <h4 class="tickets-item-details-desc-title">Downtime since last week</h4>
+                  <p class="tickets-item-details-desc-text">Updated 3 day ago</p>
+                </div>
+              </div>
+              <div class="tickets-item-customerName">
+                <h4 class="tickets-item-customerName-title">Chris Evans</h4>
+                <p class="tickets-item-customerName-text">on 23.05.2019</p>
+              </div>
+              <div class="tickets-item-date">
+                <h4 class="tickets-item-date-title">May 25, 2019</h4>
+                <p class="tickets-item-date-text">2:00 PM</p>
+              </div>
+              <div class="tickets-item-priority d-flex align-items-center justify-content-between">
+                <button class="btn btn-priority">Normal</button>
+                <img src="./images/Vector.svg" alt="Vector icon img" class="tickets-item-priority-img">
+              </div>
+            </li>
+
+            <li class="tickets-item d-flex">
+              <div class="tickets-item-details d-flex align-items-center">
+                <img src="./images/Sam-Smith.png" alt="Sam Smith" class="tickets-item-details-img">
+                <div class="tickets-item-details-desc">
+                  <h4 class="tickets-item-details-desc-title">Referral Bonus</h4>
+                  <p class="tickets-item-details-desc-text">Updated 4 day ago</p>
+                </div>
+              </div>
+              <div class="tickets-item-customerName">
+                <h4 class="tickets-item-customerName-title">Sam Smith</h4>
+                <p class="tickets-item-customerName-text">on 22.05.2019</p>
+              </div>
+              <div class="tickets-item-date">
+                <h4 class="tickets-item-date-title">May 25, 2019</h4>
+                <p class="tickets-item-date-text">11:30 PM</p>
+              </div>
+              <div class="tickets-item-priority d-flex align-items-center justify-content-between">
+                <button class="btn btn-priority">Low</button>
+                <img src="./images/Vector.svg" alt="Vector icon img" class="tickets-item-priority-img">
+              </div>
+            </li>
+
+            <li class="tickets-item d-flex">
+              <div class="tickets-item-details d-flex align-items-center">
+                <img src="./images/Tom-Cruise.png" alt="Steve Rogers" class="tickets-item-details-img">
+                <div class="tickets-item-details-desc">
+                  <h4 class="tickets-item-details-desc-title">How do I change my password?</h4>
+                  <p class="tickets-item-details-desc-text">Updated 6 day ago</p>
+                </div>
+              </div>
+              <div class="tickets-item-customerName">
+                <h4 class="tickets-item-customerName-title">Steve Rogers</h4>
+                <p class="tickets-item-customerName-text">on 21.05.2019</p>
+              </div>
+              <div class="tickets-item-date">
+                <h4 class="tickets-item-date-title">May 24, 2019</h4>
+                <p class="tickets-item-date-text">1:00 PM</p>
+              </div>
+              <div class="tickets-item-priority d-flex align-items-center justify-content-between">
+                <button class="btn-priority">Normal</button>
+                <img src="./images/Vector.svg" alt="Vector icon img" class="tickets-item-priority-img">
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/users.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
