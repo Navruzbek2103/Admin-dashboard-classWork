@@ -4,8 +4,8 @@
   font-style: normal;
   font-weight: 400;
   src:
-  url('../fonts/mulish-v12-latin-regular.woff2') format('woff2'),
-  url('../fonts/mulish-v12-latin-regular.woff') format('woff');
+  url('./../fonts/mulish-v12-latin-regular.woff2') format('woff2'),
+  url('./../fonts/mulish-v12-latin-regular.woff') format('woff');
 }
 /* mulish-600 - latin */
 @font-face {
@@ -13,8 +13,8 @@
   font-style: normal;
   font-weight: 600;
   src:
-  url('../fonts/mulish-v12-latin-600.woff2') format('woff2'),
-  url('../fonts/mulish-v12-latin-600.woff') format('woff');
+  url('./../fonts/mulish-v12-latin-600.woff2') format('woff2'),
+  url('./../fonts/mulish-v12-latin-600.woff') format('woff');
 }
 /* mulish-700 - latin */
 @font-face {
@@ -22,8 +22,8 @@
   font-style: normal;
   font-weight: 700;
   src:
-  url('../fonts/mulish-v12-latin-700.woff2') format('woff2'),
-  url('../fonts/mulish-v12-latin-700.woff') format('woff');
+  url('./../fonts/mulish-v12-latin-700.woff2') format('woff2'),
+  url('./../fonts/mulish-v12-latin-700.woff') format('woff');
 }
 body{
   font-family: "Mulish";
@@ -154,6 +154,20 @@ a{
   cursor: pointer;
 }
 
+.tickets-info-search-input{
+  order: -1;
+  width: 400px;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 15px;
+  box-shadow: 0 0 10px 0 rgb(180, 179, 179);
+  outline: none;
+}
+
+.tickets-info-search-input:focus{
+  box-shadow: 0 0 25px 5px cyan;
+}
+
 .tickets-info-username{
   font-weight: 600;
   font-size: 14px;
@@ -165,16 +179,16 @@ a{
 }
 
 
-.tickets-item:nth-child(1){
+.tickets-box:nth-child(1){
   border: none;
   padding: 32px 32px 12px 32px;
 }
 
-.tickets-item-top{
+.tickets-box-top{
   margin-bottom: 48px;
 }
 
-.tickets-item-top-title{
+.tickets-box-top-title{
   font-weight: 700;
   font-size: 19px;
   line-height: 24px;
@@ -258,6 +272,12 @@ a{
   gap: 24px;
 }
 
+.tickets-item-details-img{
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
 .tickets-item-details-desc-title{
   font-weight: 600;
   font-size: 14px;
@@ -278,9 +298,6 @@ a{
 .tickets-item{
   padding: 24px 31px;
   border-top: 1px solid #DFE0EB;
-  /* border: 1px solid #DFE0EB; */
-  /* border: 1px solid #DFE0EB; */
-  /* border: 1px solid #DFE0EB; */
 }
 
 .tickets-item-customerName{
@@ -343,7 +360,17 @@ a{
   letter-spacing: 0.5px;
   text-transform: uppercase;
   color: #FFFFFF;
-  background: #F12B2C;
   border-radius: 100px;
   text-transform: uppercase;
+  background-color: #F12B2C;
+}
+
+.btn-high{
+  background-color: #F12B2C;
+}
+.btn-low{
+  background-color: #FEC400;
+}
+.btn-normal{
+  background-color: #29CC97;
 }

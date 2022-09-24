@@ -1,4 +1,4 @@
-var data = [
+let data = [
   {
     ava: "https://images.generated.photos/lxn-bIaEzloPJrSNE7LxQGd7ITCp64lPJOb9X17nckQ/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy8wMDky/NDU3LmpwZw.jpg",
     name: "Bryar Munoz",
@@ -91,7 +91,7 @@ var data = [
     priority: "low",
   },
   {
-    ava: "https://images.generated.photos/2sQkoekQRzZ5ZeQSCjCYdhwIiER7DSMoLTbq98mZbWA/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/MTQzMzM2LmpwZw.jpg.",
+    ava: "https://images.generated.photos/2sQkoekQRzZ5ZeQSCjCYdhwIiER7DSMoLTbq98mZbWA/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/MTQzMzM2LmpwZw.jpg",
     name: "Angela Burris",
     phone: "1-813-323-6525",
     email: "nonummy@icloud.edu",
@@ -468,7 +468,7 @@ var data = [
     priority: "normal",
   },
   {
-    ava: "https://images.generated.photos/_vFJKNaTfO5WPWc0n9_yOsz9MdRWw2ar9li2-7-z870/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/NDY4Mjg0LmpwZw.jpg.",
+    ava: "https://images.generated.photos/_vFJKNaTfO5WPWc0n9_yOsz9MdRWw2ar9li2-7-z870/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/NDY4Mjg0LmpwZw.jpg",
     name: "Macey Workman",
     phone: "(430) 339-7561",
     email: "auctor.mauris.vel@outlook.couk",
@@ -650,7 +650,7 @@ var data = [
     priority: "high",
   },
   {
-    ava: "https://images.generated.photos/uSVifO-GmYK7_6-LrcMCGKpIDLojef_DGTLNPUO58lQ/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/NTIyMDUzLmpwZw.jpg.",
+    ava: "https://images.generated.photos/uSVifO-GmYK7_6-LrcMCGKpIDLojef_DGTLNPUO58lQ/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/NTIyMDUzLmpwZw.jpg",
     name: "Brady Summers",
     phone: "1-851-734-2667",
     email: "vel.est@protonmail.net",
