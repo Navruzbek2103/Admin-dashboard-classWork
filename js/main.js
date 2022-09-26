@@ -6,6 +6,21 @@ let newsSection = document.querySelector(".tickets-info-news-img");
 let elInput = document.querySelector(".tickets-info-search-input");
 let elSpan = document.querySelector(".tickets-info-search-span");
 
+let changeBtnColor = (color) =>{
+  let green = "green";
+  let red = 'red';
+  let yellow = "yellow"
+
+  if(color === "high"){
+    return red;
+  }
+  else if(color === "normal"){
+    return green;
+  }
+  else if(color === "low"){
+    return yellow;
+  }
+}
 
 function renderItem(users){
   users.forEach(element => {
@@ -28,10 +43,12 @@ function renderItem(users){
         <p class="tickets-item-date-text">${element.time}</p>
       </div>
       <div class="tickets-item-priority d-flex align-items-center justify-content-between">
-        <button class="btn btn-priority">${element.priority}</button>
+        <button class="btn btn-priority ${changeBtnColor(element.priority)}">${(element.priority)}</button>
         <img src="./images/Vector.svg" alt="Vector icon img" class="tickets-item-priority-img">
       </div>
     `
+
+    console.log(document.body.newItemtickets);
     fragmentItem.appendChild(newItemtickets);
   });
   elListTickets.appendChild(fragmentItem);
@@ -106,8 +123,3 @@ elSelectFilter.addEventListener("change", (event) =>{
   }
   filteringPriority(data)
 })
-
-
-// let filter = ["salom", "qale", "ishlar", "yaxshimi", "qale", "salom", "ishlar", "qale", "yaxshimi"]
-// let filtered = filter.filter((element) => element !== "salom");
-// console.log(filtered);
