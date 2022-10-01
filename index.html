@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/bootstrap.min.css" />
-    <link rel="stylesheet" href="./css/main.css" />
-  </head>
-  <body>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-3 p-0 dashboard">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./css/main.css" />
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-3 p-0 dashboard">
+        <div class="dashboard-wrapper position-fixed w-25">
           <a href="./index.html" class="dashboard-link d-block">
             <img
-              src="./images/logo.svg"
-              alt="dashboard logo"
-              class="dashboard-img"
+            src="./images/logo.svg"
+            alt="dashboard logo"
+            class="dashboard-img"
             />
           </a>
           <ul class="dashboard-top-list list-unstyled">
@@ -54,59 +55,60 @@
             </li>
           </ul>
         </div>
-        <div class="col-9 tickets  px-4">
-          <div class="tickets-header d-flex align-items-center justify-content-between">
-            <h2 class="tickets-header-title d-block">Tickets</h2>
-            <div class="tickets-info d-flex align-items-center">
-              <div class="tickets-info-search d-flex align-items-center gap-4">
-                <input type="text" placeholder="Search users..." class="tickets-info-search-input">
-                <img src="./images/search-icon.svg" alt="search icon" class="tickets-info-search-img" title="Search users">
-                <span class="tickets-info-search-span">Users 200</span>
-                <img src="./images/new-icon.svg" alt="news-icon" class="tickets-info-news-img" title="News">
-              </div>
-              <img src="./images/vertical-icon.svg" alt="vertical icon" class="tickets-info-img">
-              <div class="tickets-info-user">
-                <p class="tickets-info-username d-inline-block">Jones Ferdinand</p>
-                <img src="./images/Jones-Ferdinand.png" alt="Jones Ferdinand's image" class="tickets-info-user-img">
-              </div>
+      </div>
+      <div class="col-9 tickets  border w-75">
+        <div class="tickets-header d-flex align-items-center justify-content-between position-fixed top-0">
+          <h2 class="tickets-header-title d-block">Tickets</h2>
+          <div class="tickets-info d-flex align-items-center">
+            <div class="tickets-info-search d-flex align-items-center gap-4">
+              <input type="text" placeholder="Search users..." class="tickets-info-search-input">
+              <img src="./images/search-icon.svg" alt="search icon" class="tickets-info-search-img" title="Search users">
+              <span class="tickets-info-search-span">Users 200</span>
+              <img src="./images/new-icon.svg" alt="news-icon" class="tickets-info-news-img" title="News">
+            </div>
+            <img src="./images/vertical-icon.svg" alt="vertical icon" class="tickets-info-img">
+            <div class="tickets-info-user">
+              <p class="tickets-info-username d-inline-block">Jones Ferdinand</p>
+              <img src="./images/Jones-Ferdinand.png" alt="Jones Ferdinand's image" class="tickets-info-user-img">
             </div>
           </div>
-          <div class="tickets-block border rounded-3 bg-white">
-            <div class="tickets-box ">
-              <div class="tickets-box-top d-flex align-items-center justify-content-between">
-                <h3 class="tickets-box-top-title">All tickets</h3>
-                <div class="tickets-sort-filter-box d-flex align-items-center">
-                  <p class="tickets-sort-box-text">Sort</p>
-                  <select id="sort-select">
-                    <option value="a-z">A -> Z</option>
-                    <option value="z-a">Z -> A</option>
-                  </select>
-                  <p class="tickets-filter-box-text">Filter</p>
-                  <select id="filter-select">
-                    <option value="high">High</option>
-                    <option value="normal">Normal</option>
-                    <option value="low">Low</option>
-                  </select>
-                </div>
+        </div>
+        <div class="tickets-block border rounded-3 bg-white">
+          <div class="tickets-box position-fixed bg-white border">
+            <div class="tickets-box-top d-flex align-items-center justify-content-between">
+              <h3 class="tickets-box-top-title">All tickets</h3>
+              <div class="tickets-sort-filter-box d-flex align-items-center">
+                <p class="tickets-sort-box-text">Sort</p>
+                <select id="sort-select">
+                  <option value="a-z">A -> Z</option>
+                  <option value="z-a">Z -> A</option>
+                </select>
+                <p class="tickets-filter-box-text">Filter</p>
+                <select id="filter-select">
+                  <option value="high">High</option>
+                  <option value="normal">Normal</option>
+                  <option value="low">Low</option>
+                </select>
               </div>
-              <ul class="tickets-item-list list-unstyled d-flex">
-                <li class="tickets-item-item">Ticket details</li>
-                <li class="tickets-item-item">Customer name</li>
-                <li class="tickets-item-item">Date</li>
-                <li class="tickets-item-item">Priority</li>
-              </ul>
             </div>
-            <ul class="tickets-list list-unstyled">
-
+            <ul class="tickets-item-list list-unstyled d-flex">
+              <li class="tickets-item-item">Ticket details</li>
+              <li class="tickets-item-item">Customer name</li>
+              <li class="tickets-item-item">Date</li>
+              <li class="tickets-item-item">Priority</li>
             </ul>
           </div>
+          <ul class="tickets-list list-unstyled">
+
+          </ul>
         </div>
       </div>
     </div>
+  </div>
 
-    <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/users.js"></script>
-    <script src="./js/main.js"></script>
-    <script src="./js/test.js"></script>
-  </body>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="./js/users.js"></script>
+  <script src="./js/main.js"></script>
+  <script src="./js/test.js"></script>
+</body>
 </html>
